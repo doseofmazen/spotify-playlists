@@ -19,6 +19,7 @@
 }
 
 body {
+  background-color: var(--secondary-background-color);
   text-align: center;
   transition: background calc(var(--transition-speed) - 100ms) ease-in-out,
     color calc(var(--transition-speed) + 400ms) ease-in-out !important;

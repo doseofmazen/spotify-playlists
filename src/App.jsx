@@ -51,7 +51,7 @@ class App extends React.Component {
           const tracksResponse = await fetch(item.tracks.href, {
             headers: { Authorization: "Bearer " + accessToken },
           });
-          return await tracksResponse.json();
+          return tracksResponse.json();
         };
         return trackhref();
       });

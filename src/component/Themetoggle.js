@@ -8,6 +8,7 @@ function Themetoggle() {
   );
 
   //available themes
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const themeMap = {
     dark: "dark",
     light: "light",
@@ -47,7 +48,7 @@ function Themetoggle() {
     >
       <ToggleTheme selectedTheme={currentTheme} onChange={setCurrentTheme} />
       <span style={{ margin: "auto", paddingLeft: "7px" }}>
-        {currentTheme === "light" ? "Dark Mode" : "Rise n shine"}
+        {currentTheme === "light" ? "Dark" : "Light"}
       </span>
     </div>
   );
